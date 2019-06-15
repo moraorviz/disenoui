@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "asignatura del master",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1",
+    "express-fileupload": "^1.1.5",
+    "express-session": "^1.15.6",
+    "mongodb": "^2.2.33",
+    "sharp": "^0.22.1",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Mario Moraño Orviz <moraorviz@gmail.com>",
+  "license": "ISC"
+}

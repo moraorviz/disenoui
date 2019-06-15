@@ -1,0 +1,20 @@
+{% extends "base.html" %} 
+
+{% block titulo %} Detalles del producto {% endblock %} 
+
+{% block contenido_principal %}
+	 <div class="row">
+		<div class="media col-xs-10">
+		  <div class="media-left media-middle">
+			<img class="media-object" src="/principales/{{ producto._id.toString() }}.png" >
+		  </div>
+		  <div class="media-body">
+			 <h2>{{ producto.nombre }}</h2>
+			 <p>{{ producto.vendedor }}</p>
+			 <p>{{ producto.categoria }}</p>
+			 <a class="btn btn-primary pull-right" 
+		 		href="/producto/comprar/{{ producto._id.toString() }}">{{ producto.precio }} €</a>
+		  </div>
+		</div>
+	  </div>
+{% endblock %}

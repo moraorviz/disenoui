@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Productos</title>
+    </head>
+    <body>
+        <h1>{{ vendedor }}</h1>
+        <ul>
+        {% for producto in productos %}
+          <li>
+            {{ producto.nombre }} - {{ producto.precio }}
+          </li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
