@@ -17,6 +17,16 @@ module.exports = function (app, swig, gestorBD, sharp) {
         });
     });
 
+    app.get('/paginavacia', function(req, res) {
+        var respuesta = swig.renderFile('views/paginavacia.html');
+        res.send(respuesta);
+    })
+
+    app.get('/inversion', function(req, res) {
+        var respuesta = swig.renderFile('views/inversion.html');
+        res.send(respuesta);
+    })
+
     app.get('/productos/agregar', function (req, res) {
 
         var respuesta = swig.renderFile('views/bagregar.html', {

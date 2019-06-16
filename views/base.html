@@ -10,6 +10,61 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   {% block scripts %} {% endblock %}
+
+  <style>
+    .dropdown-submenu {
+      position: relative;
+    }
+
+    .dropdown-submenu>.dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: -6px;
+      margin-left: -1px;
+      -webkit-border-radius: 0 6px 6px 6px;
+      -moz-border-radius: 0 6px 6px;
+      border-radius: 0 6px 6px 6px;
+    }
+
+    .dropdown-submenu:hover>.dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-submenu>a:after {
+      display: block;
+      content: " ";
+      float: right;
+      width: 0;
+      height: 0;
+      border-color: transparent;
+      border-style: solid;
+      border-width: 5px 0 5px 5px;
+      border-left-color: #ccc;
+      margin-top: 5px;
+      margin-right: -10px;
+    }
+
+    .dropdown-submenu:hover>a:after {
+      border-left-color: #fff;
+    }
+
+    .dropdown-submenu.pull-left {
+      float: none;
+    }
+
+    .dropdown-submenu.pull-left>.dropdown-menu {
+      left: -100%;
+      margin-left: 10px;
+      -webkit-border-radius: 6px 0 6px 6px;
+      -moz-border-radius: 6px 0 6px 6px;
+      border-radius: 6px 0 6px 6px;
+    }
+
+    .dropdown-item {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+  </style>
 </head>
 
 <body>
@@ -35,25 +90,101 @@
         <ul class='nav navbar-nav navbar-collapse'>
           <!-- Example single danger button -->
           <div class="btn-group">
-            <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="false"
-              aria-expanded="false">
-              Menú 
+            <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown"
+              aria-haspopup="false" aria-expanded="false">
+              Menú
             </button>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Menú</a>
-              <br>
-              <a class="dropdown-item" href="#">Periódico colaborativo</a>
-              <br>
-              <a class="dropdown-item" href="#">Portal para restaurantes</a>
-              <br>
-              <a class="dropdown-item" href="#">Portal de empleo y CV online</a>
-              <br>
-              <a class="dropdown-item" href="#">Banco online</a>
-              <br>
-              <a class="dropdown-item" href="#">Página de segunda mano</a>
-              <br>
+            <div class="dropdown-menu multi-level w-500">
+              <div class="dropdown-submenu">
+                <a class='dropdown-item' tabindex="-1" href="/paginavacia">Periódico colaborativo</a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="/paginavacia">Temas del día</a></li>
+                  <li><a href="/paginavacia">Comunidades autónomas</a></li>
+                  <li><a href="/paginavacia">Artículos y actualidad</a></li>
+                  <li><a href="/paginavacia">Blogs</a></li>
+                  <li><a href="/paginavacia">Foro</a></li>
+                  <li><a href="/paginavacia">Incidencias</a></li>
+                  <li><a href="/paginavacia">Noticias Internet</a></li>
+                  <li><a href="/paginavacia">Redes Sociales</a></li>
+                  <li><a href="/paginavacia">Política</a></li>
+                  <li><a href="/paginavacia">Ciencia</a></li>
+                  <li><a href="/paginavacia">Cultura</a></li>
+                  <li><a href="/paginavacia">Deportes</a></li>
+                  <li><a href="/paginavacia">Económica</a></li>
+                  <li><a href="/paginavacia">Internacional</a></li>
+                  <li><a href="/paginavacia">Deporte</a></li>
+                  <li><a href="/paginavacia">Política de privacidad</a></li>
+                  <li><a href="/paginavacia">Condiciones generales<a></li>
+                </ul>
+              </div>
+              <div class="dropdown-submenu">
+              <a class='dropdown-item' tabindex="-1" href="/paginavacia">Restaurantes</a>
+                  <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="/paginavacia">Restaurantes cercanos</a></li>
+                    <li><a href="/paginavacia">Mejor valorados</a></li>
+                    <li><a href="/paginavacia">Nuevos restaurantes</a></li>
+                    <li><a href="/paginavacia">Promociones</a></li>
+                    <li><a href="/paginavacia">Información de alérgenos</a></li>
+                    <li><a href="/paginavacia">Ayuda</a></li>
+                    <li><a href="/paginavacia">Sushi</a></li>
+                    <li><a href="/paginavacia">Contacta</a></li>
+                    <li><a href="/paginavacia">Garantías y precios</a></li>
+                    <li><a href="/paginavacia">Política de privacidad</a></li>
+                    <li><a href="/paginavacia">Condiciones generales</a></li>
+                  </ul>
+              </div>
+              <div class="dropdown-submenu">
+              <a class='dropdown-item' tabindex="-1" href="/paginavacia">Empleo</a>
+                  <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="/paginavacia">Empleos</a></li>
+                    <li><a href="/paginavacia">Marketing</a></li>
+                    <li><a href="/paginavacia">Publicidad</a></li>
+                    <li><a href="/paginavacia">Conferencias y eventos</a></li>
+                    <li><a href="/paginavacia">Curos de formación</a></li>
+                    <li><a href="/paginavacia">Freelance</a></li>
+                    <li><a href="/paginavacia">Blogs</a></li>
+                    <li><a href="/paginavacia">Economía</a></li>
+                    <li><a href="/paginavacia">Contacta</a></li>
+                    <li><a href="/paginavacia">Sala de prensa</a></li>
+                    <li><a href="/paginavacia">Política de privacidad</a></li>
+                    <li><a href="/paginavacia">Condiciones generales</a></li>
+                  </ul>
+              </div>
+              <div class="dropdown-submenu">
+              <a class='dropdown-item' tabindex="-1" href="/paginavacia">Banco online</a>
+                  <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="/paginavacia">Cuentas</a></li>
+                    <li><a href="/paginavacia">Ahorro</a></li>
+                    <li><a href="/paginavacia">Inversión</a></li>
+                    <li><a href="/paginavacia">Hipotecas</a></li>
+                    <li><a href="/paginavacia">Financiación</a></li>
+                    <li><a href="/paginavacia">Préstamos</a></li>
+                    <li><a href="/paginavacia">Seguros</a></li>
+                    <li><a href="/paginavacia">Acciones</a></li>
+                    <li><a href="/paginavacia">Pensiones</a></li>
+                    <li><a href="/paginavacia">Renting</a></li>
+                    <li><a href="/paginavacia">Empresas</a></li>
+                    <li><a href="/paginavacia">Banca privada</a></li>
+                    <li><a href="/paginavacia">Buscador de oficinas</a></li>
+                    <li><a href="/paginavacia">Consejo directivo</a></li>
+                    <li><a href="/paginavacia">Domiciliaciones</a></li>
+                  </ul>
+              </div>
+              <div class="dropdown-submenu">
+              <a class='dropdown-item' tabindex="-1" href="/paginavacia">Control de operarios</a>
+                  <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="/paginavacia">Todos</a></li>
+                    <li><a href="/paginavacia">Últimas incidencias</a></li>
+                    <li><a href="/paginavacia">Información sobre la plataforma</a></li>
+                    <li><a href="/paginavacia">Contrataciones</a></li>
+                    <li><a href="/paginavacia">Servicios</a></li>
+                    <li><a href="/paginavacia">Contacto</a></li>
+                    <li><a href="/paginavacia">Política de privacidad</a></li>
+                    <li><a href="/paginavacia">Condiciones generales</a></li>
+                  </ul>
+              </div>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
+              <a class="dropdown-item" href='/inversion'>Empresa de inversión</a>
             </div>
           </div>
         </ul>
