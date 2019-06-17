@@ -25,6 +25,11 @@ module.exports = function (app, swig, gestorBD, sharp) {
     app.get('/inversion', function(req, res) {
         var respuesta = swig.renderFile('views/inversion.html');
         res.send(respuesta);
+    });
+
+    app.get('/contacto', function(req, res) {
+        var respuesta = swig.renderFile('views/contacto.html');
+        res.send(respuesta);
     })
 
     app.get('/productos/agregar', function (req, res) {
