@@ -1,8 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Descripción de la empresa</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Add custom CSS here -->
+    <style>
+        body {
+            margin-top: 125px;
+            /* adjust this if the height of the menu bar changes */
+        }
+
+        .nav {
+            margin-top: 28px;
+            /* this is a faux center fix for the nav options - adjust this if you wish to change the logo height or the font of the menu items */
+        }
+
+        footer {
+            padding: 30px 0;
+        }
+    </style>
+</head>
+
 <body>
 
-<p>Empresa de inversión.</p>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+                <a class="navbar-brand logo-nav" href="#">
+                    <img src="/img/logoinversion.png">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">Sobre Nosotros</a>
+                    </li>
+                    <li><a href="#services">Servicios</a>
+                    </li>
+                    <li><a href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-8">
+                <img class="img-responsive img-rounded" src="/img/main.png">
+                <!-- take out img-rounded if you don't want the rounded corners on the image -->
+            </div>
+            <div class="col-lg-4">
+                <h1>DPIU</h1>
+                <p>
+                        DPIU CAPITAL ES EL FONDO DE CAPITAL PRIVADO LÍDER EN ESPAÑA EN INVERSIONES EN
+                        SITUACIONES ESPECIALES CON MÁS DE 1200 MILLONES DE EUROS BAJO GESTIÓN.
+                </p>
+                <a class="btn btn-primary btn-lg" href="/contacto">Contáctanos!</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="well text-center">
+                    This is a well that is a great spot for a business tagline or phone number for easy access!
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <h2>Quien Somos</h2>
+                <p>
+                        DPIU CAPITAL es el fondo de capital privado líder en inversiones en medianas empresas en
+                        España que atraviesan situaciones especiales, de especial complejidad y/o que requieren
+                        procesos de transformación. En este sentido, típicamente invierte tanto en el capital como en
+                        la deuda de empresas que cuentan con un buen posicionamiento estratégico pero que se
+                        enfrentan a importantes desafíos estratégicos, operativos, financieros o accionariales.
+                </p>
+                <a class="btn btn-default" data-toggle="collapse" href="#moreInfo" role='button' aria-expanded='false' aria-controls='moreInfo'>Más Info</a>
+                <div class='collapse' id='moreInfo'>
+                    <div class='card card-body'>
+                            La tesis de inversión caracteriza a DPIU CAPITAL como un socio activo y comprometido que
+                            contribuye con una visión de largo plazo, el capital necesario, un equipo propio con talento y
+                            una dilatada experiencia para crear valor y asegurar la competitividad de las empresas donde
+                            invierte.
+                    </div>
+                </div>
+            <div class="col-lg-4">
+                <h2>Heading 2</h2>
+                <p>Phasellus vestibulum sagittis purus laoreet varius. Pellentesque malesuada malesuada mattis. Aliquam
+                    sed porta nisi, eget suscipit dolor. Nam ipsum sapien, rhoncus eu leo eu, ultricies pellentesque
+                    tellus.</p>
+                <a class="btn btn-default" href="#">More Info</a>
+            </div>
+            <div class="col-lg-4">
+                <h2>Heading 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin auctor quam ac tempor.
+                    Cras a ante sed libero mollis sodales. Praesent fringilla, neque ut ultrices faucibus, dolor eros
+                    ultrices neque, nec bibendum arcu ipsum eget justo.</p>
+                <a class="btn btn-default" href="#">More Info</a>
+            </div>
+        </div>
+
+        <footer>
+            <hr>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; DPIU 2013</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
 
 </body>
-</html> 
+
+</html>
