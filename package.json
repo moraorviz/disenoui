@@ -4,8 +4,8 @@
   "description": "asignatura del master",
   "main": "app.js",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.1",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
     "express-fileupload": "^1.1.5",
     "express-session": "^1.15.6",
     "mongodb": "^2.2.33",
